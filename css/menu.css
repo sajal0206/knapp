@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&family=Poppins:wght@200;400&family=Risque&family=Roboto&display=swap');
+
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: poly;
+}
+
+
+*::-webkit-scrollbar {
+    background   : transparent;
+    width        : 0.5rem;
+    border-radius: 2rem;
+    height       : 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background   : #505458;
+    border-radius: 2rem;
+}
+
+.header {
+    background     : #383A3D;
+    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.header .fa-bars {
+    font-size          : 4vh;
+    margin-inline-start: 8vh;
+    margin-block       : 2vh;
+    color              : #fff;
+    cursor             : pointer;
+    transition         : 0.2s;
+}
+
+.header .fa-bars:hover {
+    transition: 0.2s;
+    transform : scale(1.2);
+}
+
+.header #userName {
+    color            : #fff;
+    margin-block     : 2vh;
+    margin-inline-end: 5vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    cursor           : pointer;
+}
+
+.main {
+    display: flex;
+    width  : 100%;
+}
+
+.sidebar {
+    position     : relative;
+    top          : 0;
+    padding      : 1vh;
+    background   : #505458;
+    width        : fit-contentF;
+    text-align   : center;
+    min-height   : 89vh;
+    height       : auto;
+    max-height   : 150vh;
+    box-shadow   : 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 0px;
+    z-index      : 2;
+}
+
+.sidebar form {
+    margin: 2vh;
+}
+
+.sidebar form button,
+.custBtn {
+    background   : #FFFFFF;
+    border-radius: 10px;
+    border       : none;
+    min-width    : 25vh;
+    max-width    : 30vh;
+    padding      : 1vh;
+    font-style   : normal;
+    font-weight  : bold;
+    font-size    : 2vh;
+    line-height  : 3.6vh;
+    cursor       : pointer;
+    transition   : 0.2s;
+}
+
+.custBtn {
+    margin-block: 1vh;
+}
+
+#accountBtn {
+    margin-top: 0;
+}
+
+#registrationBtn {
+    margin-bottom: 0;
+}
+
+.sidebar form button:hover,
+.custBtn:hover {
+    transition: 0.2s;
+    box-shadow: 0px 2px 4px 3px rgba(241, 243, 114, 0.24);
+    transform : translateY(-1px);
+    background: rgb(129, 129, 233);
+    color     : #fff;
+}
+
+.accountInfo {
+    position       : fixed;
+    z-index        : 2;
+    background     : #383A3D;
+    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius  : 10px;
+    width          : 26vh;
+    height         : 32vh;
+    right          : 0.5vh;
+    top            : 9.5vh;
+    flex-direction : column;
+    justify-content: flex-end;
+    align-items    : center;
+    padding        : 1vh;
+    display        : none;
+}
+
+.accountInfo .userProfile {
+    width        : 20vh;
+    border-radius: 1vh;
+    margin-bottom: 2vh;
+}
+
+.accountInfo form {
+    margin: 0.5vh;
+    width : 90%;
+}
+
+.accountInfo form button {
+    background   : #FFFFFF;
+    border-radius: 10px;
+    border       : none;
+    padding-block: 0.4vh;
+    font-weight  : normal;
+    font-size    : 2.5vh;
+    line-height  : 2.4vh;
+    width        : 100%;
+    cursor       : pointer;
+}
+
+.accountInfo form button:hover {
+    transition: 0.2s;
+    box-shadow: 0px 2px 2px 3px rgba(161, 161, 147, 0.24);
+    transform : translateY(-1px);
+}
+
+.dashRight {
+    width       : 100%;
+    column-count: 3;
+    gap         : 2vh;
+    height      : 80vh;
+    padding     : 2vh;
+}
+
+.dashRight form {
+    height: fit-content;
+}
+
+.dashRight form button {
+    background  : transparent;
+    border      : none;
+    margin-block: 3vh;
+}
+
+.dashRight form button .customCard {
+    box-sizing   : border-box;
+    border-radius: 6px;
+    width        : 44vh;
+    height       : 9.3vh;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 2.6vh;
+    line-height  : 2.8vh;
+    border       : 0.3px solid #000000;
+    text-align   : start;
+    padding      : 1vh;
+    cursor       : pointer;
+}
+
+.dashRight form button .customCard .Count {
+    float             : right;
+    font-size         : 4vh;
+    padding-inline-end: 10%;
+}
+
+.dashRight form button .customCard:hover {
+    transform : translateY(-2px);
+    box-shadow: 0 2px 0.2vh 0.1vh rgb(192, 74, 74);
+}
+
+
+.dashRight form button #c1 {
+    background: #FEBDBD;
+    color     : #FF0000;
+}
+
+.dashRight form button #c2 {
+    background: #FEDCBD;
+    color     : #FA7700;
+}
+
+.dashRight form button #c3 {
+    background: #EDFEBD;
+    color     : #688C00;
+}
+
+.dashRight form button #c4 {
+    background: #BDFEC4;
+    color     : #00700C;
+}
+
+.dashRight form button #c5 {
+    background: #BDFEF2;
+    color     : #00A98A;
+}
+
+.pop {
+    position       : absolute;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+    width          : 64vh;
+    height         : 50vh;
+    background     : rgba(26, 24, 31, 0.34);
+    border         : 3px solid #FFFFFF;
+    box-sizing     : border-box;
+    box-shadow     : 0px 4px 7px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius  : 10px;
+    display        : none;
+    z-index        : 2;
+}
+
+.pop .fa-window-close {
+    color : #676767;
+    float : right;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+.pop .fa-window-close:hover {
+    transform: scale(1.1);
+    color    : rgb(83, 51, 51);
+}
+
+.pop .forms {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+.pop .forms {
+    position : relative;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop .forms form {
+    margin: 2vh auto;
+}
+
+.pop .forms button {
+    background   : #FFFFFF;
+    border-radius: 10px;
+    border       : none;
+    min-width    : 25vh;
+    max-width    : 30vh;
+    padding      : 1vh;
+    font-style   : normal;
+    font-weight  : bold;
+    font-size    : 2vh;
+    line-height  : 3.6vh;
+    cursor       : pointer;
+    transition   : 0.2s;
+}
+
+.pop form button:hover {
+    transition: 0.2s;
+    box-shadow: 0px 2px 4px 3px rgba(241, 243, 114, 0.24);
+    transform : translateY(-1px);
+    background: rgb(129, 129, 233);
+    color     : #fff;
+}
+
+@media screen and (max-width: 1054px) {
+    .sidebar {
+        display: none;
+    }
+
+    .dashRight {
+        display       : flex;
+        flex-direction: column;
+        text-align    : center;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .main {
+        display: block;
+    }
+
+    .sidebar {
+        width: 90%;
+    }
+
+    .dashRight {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .dashRight form button .customCard {
+        width: 20vh;
+    }
+}
