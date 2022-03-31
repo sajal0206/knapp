@@ -109,13 +109,14 @@ form button {
     border-radius  : 10px;
     cursor         : pointer;
     transition     : 0.2s;
-    margin-bottom: 2vh;
+    margin-bottom  : 2vh;
 }
 
 form a {
     color: rgb(171, 171, 253);
 }
-form a:hover{
+
+form a:hover {
     color: rgb(207, 207, 236);
 }
 
@@ -125,11 +126,27 @@ form button:hover,
     transform : scale(1.05);
 }
 
+label .captchaBox {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+@media screen and (max-width: 538px) {
+
+    .formcontainer {
+        width: 100%;
+    }
+
+    .form label {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 453px) {
 
-    .form label,
-    form button {
-        width: 35vh;
+    .formcontainer {
+        width: 100%;
     }
 
     .form label img {
@@ -140,20 +157,7 @@ form button:hover,
 
 @media screen and (max-width: 383px) {
 
-    .form label,
-    form button {
-        width: 25vh;
-    }
-
     .form label img {
-        max-width: 8vh;
-    }
-}
-
-@media screen and (max-width: 300px) {
-
-    .form label,
-    form button {
-        width: 35vh;
+        max-width: 10vh;
     }
 }
