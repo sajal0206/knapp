@@ -165,6 +165,7 @@
     gap         : 2vh;
     height      : 80vh;
     padding     : 2vh;
+    overflow    : auto;
 }
 
 .dashRight form {
@@ -234,7 +235,7 @@
     top            : 50%;
     left           : 50%;
     transform      : translate(-50%, -50%);
-    width          : 64vh;
+    width          : 80%;
     height         : 50vh;
     background     : rgba(26, 24, 31, 0.34);
     border         : 3px solid #FFFFFF;
