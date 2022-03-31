@@ -30,7 +30,7 @@
 
 .header .fa-bars {
     font-size          : 4vh;
-    margin-inline-start: 8vh;
+    margin-inline-start: 2vh;
     margin-block       : 2vh;
     color              : #fff;
     cursor             : pointer;
@@ -308,6 +308,12 @@
         display       : flex;
         flex-direction: column;
         text-align    : center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .dashRight form button .customCard {
+        width: 30vh;
     }
 }
 
