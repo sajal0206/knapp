@@ -141,6 +141,11 @@ label .captchaBox {
     .form label {
         width: 100%;
     }
+
+    form button:hover,
+    .form label:hover {
+        transform : scale(1);
+    }
 }
 
 @media screen and (max-width: 453px) {
