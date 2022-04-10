@@ -16,14 +16,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" href="images/logo/logo.png">
-    <title>Accounts Management ERP</title>
+    <title>Management ERP</title>
 </head>
 
 <body>
 
 </body>
-<header class="header"><i class="fa fa-bars" aria-hidden="true"></i> <span name="" id="userName">Faculty Name <svg
-            width="5vh" height="5vh" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<header class="header"><i class="fa fa-bars" aria-hidden="true"></i> <span name="" id="userName">Manager<svg width="5vh"
+            height="5vh" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M29.5001 25.7369C33.0914 25.7369 35.7404 23.1672 35.7404 19.6762C35.7404 16.1852 33.0914 13.6155 29.5001 13.6155C25.9118 13.6155 23.2597 16.1852 23.2597 19.6762C23.2597 23.1672 25.9118 25.7369 29.5001 25.7369ZM29.5001 28.7673C22.6076 28.7673 17.0193 33.6522 17.0193 39.6765V40.8462H41.9808V39.6765C41.9808 33.6522 36.3926 28.7673 29.5001 28.7673Z"
                 fill="white" />
@@ -36,12 +36,13 @@
         <form action="#" method="get"><button type="submit">Notices</button></form>
         <form action="#" method="get"><button type="submit">KNAPP Chats</button></form>
         <form action="#" method="get"><button type="submit">KNAPP Mails</button></form>
-        <form action="#" method="get"><button type="submit">Manage Faculties</button></form>
-        <form action="#" method="get"><button type="submit" class="staffBtn">Manage Staff</button></form>
-        <form action="#" method="get"><button type="submit">Manage Students</button></form>
+        <form action="showStaff.html" method="get"><button type="submit">Manage Faculties</button></form>
+        <button type="submit" class="custBtn staffBtn">Manage Staff</button>
+        <form action="showStudents.html" method="get"><button type="submit">Manage Students</button></form>
+        <form action="#" method="get"><button type="submit">Add New</button></form>
     </div>
     <section class="dashRight">
-        <form action="">
+        <form action="showStaff.html" method="get" target="_blank">
             <button type="submit">
                 <div class="customCard" id="c1">
                     Faculties
@@ -50,19 +51,31 @@
                 </div>
             </button>
         </form>
-        <form action="#">
+        <form action="#" method="get">
             <button type="submit" class="staffBtn">
-                <div class="customCard" id="c4">
-                    Staff
+                <div class="customCard" id="c2">
+                    Add New
                     <br>
-                    <span class="Count">50000</span>
             </button>
         </form>
-        <form action="">
+        <form action="showStudents.html" method="get" target="_blank">
             <button type="submit">
                 <div class="customCard" id="c3">
                     Students
                     <br>
+                    <span class="Count">50000</span>
+                </div>
+            </button>
+        </form>
+        <form action="">
+            <button type="submit">
+                </div>
+            </button>
+        </form>
+        <form action="showBusStaff.html" method="get" target="_blank">
+            <button type="submit">
+                <div class="customCard" id="c4">
+                    Staff
                     <span class="Count">50000</span>
                 </div>
             </button>
