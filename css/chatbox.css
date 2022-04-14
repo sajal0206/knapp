@@ -164,7 +164,7 @@
 }
 
 .chatMain .grpInfo {
-    margin : 5vh;
+    margin : 5vh auto;
     display: none;
     width  : 100%;
 }
