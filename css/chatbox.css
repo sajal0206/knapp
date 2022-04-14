@@ -138,24 +138,27 @@
 }
 
 .msg form {
-    width          : 100%;
-    background     : #17273E;
-    border         : 3px solid #04234F;
-    box-sizing     : border-box;
-    border-radius  : 12px;
-    display        : flex;
-    align-items    : center;
-    justify-content: space-between;
-    padding        : 0 2vh;
-    margin-top     : 1vh;
+    width               : 100%;
+    background          : #17273E;
+    border              : 3px solid #04234F;
+    box-sizing          : border-box;
+    border-radius       : 12px;
+    display             : flex;
+    align-items         : center;
+    justify-content     : space-between;
+    padding             : 0 2vh;
+    margin-top          : 1vh;
+    padding-inline-start: 0;
 }
 
 .msg form input {
-    width     : 100%;
-    background: transparent;
-    border    : none;
-    height    : 5vh;
-    color     : #fff;
+    width        : 100%;
+    background   : transparent;
+    border       : none;
+    height       : 5vh;
+    color        : #fff;
+    border-radius: 12px;
+    padding      : 0 2vh;
 }
 
 .msg form button {
@@ -175,7 +178,7 @@
     flex-direction : column;
     justify-content: center;
     align-items    : center;
-    margin         : 5vh auto;
+    margin         : 5vh;
 }
 
 .chatMain .grpInfo ul li {
