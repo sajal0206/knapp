@@ -14,6 +14,10 @@ body {
     background-attachment: fixed;
 }
 
+button {
+    cursor: pointer;
+}
+
 .main {
     position       : absolute;
     margin         : auto;
@@ -27,6 +31,10 @@ body {
     flex-direction : column;
     text-align     : center;
     justify-content: space-evenly;
+}
+
+.useraddMain {
+    display: block;
 }
 
 .main h1 {
@@ -74,6 +82,15 @@ body {
     margin       : 2vh 3vh;
 }
 
+.useraddMain .usersadd {
+    overflow: visible;
+}
+
+.useraddMain .usersadd form {
+    flex-direction: column;
+}
+
+
 .main .container form button {
     background   : linear-gradient(180deg, rgba(54, 97, 139, 0.5) 0%, #001028 100%);
     border       : 1px solid rgba(0, 0, 0, 0.4);
@@ -82,6 +99,17 @@ body {
     border-radius: 30px;
     height       : 5vh;
     width        : 5vh;
+}
+
+.useraddMain .usersadd form button {
+    font-weight    : 400;
+    font-size      : 3vh;
+    line-height    : 48px;
+    color          : #FFFFFF;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 20vh;
 }
 
 .main .container::-webkit-scrollbar {
